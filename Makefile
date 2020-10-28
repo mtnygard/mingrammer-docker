@@ -3,7 +3,7 @@ SHELL := bash -eu -o pipefail -c
 
 # ---
 
-image-name := gtramontina/diagrams
+image-name := mtnygard/mingrammer
 tag = $(shell cat pyproject.toml | grep -e "^diagrams =" | awk -F '"' '{print $$2}')
 
 # ---
